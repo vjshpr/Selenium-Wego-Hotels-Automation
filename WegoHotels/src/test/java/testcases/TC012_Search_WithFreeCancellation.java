@@ -12,7 +12,7 @@ import utilities.ReadTestData;
 public class TC012_Search_WithFreeCancellation extends BaseTest {
 
 	@Test
-	public static void login() throws InterruptedException, IOException {
+	public static void WithFreeCancellation() throws InterruptedException, IOException {
 		
 		ReadTestData readTD = new ReadTestData();
 		String[] columnNames = { "Destination","CheckIn","CheckOut","Adults","Children","Rooms","FreeCancellation","WithComparison"};
@@ -43,5 +43,7 @@ public class TC012_Search_WithFreeCancellation extends BaseTest {
 		String withCompareValue = hsr.withComparison(inputWithComparison);
 		hsr.search();
 		Assert.assertEquals(actualFreeCancellation, true);
+		logger.info("Test Case Successfully executed");
+
 	}
 }

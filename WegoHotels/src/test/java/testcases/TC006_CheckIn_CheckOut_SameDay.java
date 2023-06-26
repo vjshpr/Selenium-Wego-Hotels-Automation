@@ -30,6 +30,8 @@ public class TC006_CheckIn_CheckOut_SameDay extends BaseTest {
 		String checkOutDateFound = hsr.checkOut(inputCheckOutDay, inputCheckOutMonth);
 		Assert.assertTrue(checkInDateFound.equals("Date Selected"));
 		Assert.assertTrue(checkOutDateFound.equals("Date is disabled"));
+		logger.info("Test Case Successfully executed");
+
 	}
 
 }

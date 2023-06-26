@@ -23,6 +23,7 @@ public class TC003_Destination_WithPopularCity extends BaseTest {
 		String actualDestinationName = hsr.destinationPopularCity(inputDestinationName);
 		Assert.assertTrue(actualDestinationName.contains(inputDestinationName));
 	
-		
+		logger.info("Test Case Successfully executed");
+
 	}
 }

@@ -12,7 +12,7 @@ import utilities.ReadTestData;
 public class TC013_Search_ComparisonWithOtherWebsites extends BaseTest {
 
 	@Test
-	public static void login() throws InterruptedException, IOException {
+	public static void ComparisonWithOtherWebsites() throws InterruptedException, IOException {
 		
 		ReadTestData readTD = new ReadTestData();
 		String[] columnNames = { "Destination","CheckIn","CheckOut","Adults","Children","Rooms","FreeCancellation","WithComparison" };
@@ -44,5 +44,7 @@ public class TC013_Search_ComparisonWithOtherWebsites extends BaseTest {
 		String actualWithComparison = hsr.withComparison(inputWithComparison);
 		ArrayList<String> acutalWindowsUrl = hsr.search();
 		Assert.assertEquals(acutalWindowsUrl.size(), 2);
+		logger.info("Test Case Successfully executed");
+
 	}
 }

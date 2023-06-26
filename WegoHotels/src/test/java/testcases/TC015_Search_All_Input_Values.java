@@ -51,5 +51,7 @@ public class TC015_Search_All_Input_Values extends BaseTest {
 		Assert.assertEquals(actualRoomsCount, 1);
 		Assert.assertTrue(actualFreeCancellation, actualWithComparison);
 		Assert.assertEquals(acutalWindowsUrl.size(), 2);
+		logger.info("Test Case Successfully executed");
+
 	}
 }

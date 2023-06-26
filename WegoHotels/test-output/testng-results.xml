@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="13" failed="2" skipped="0">
+<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-26T00:25:48 MYT" name="Suite" finished-at="2023-06-26T00:28:41 MYT" duration-ms="173287">
+  <suite started-at="2023-06-26T11:25:20 MYT" name="wegoSDETAssignment" finished-at="2023-06-26T11:28:08 MYT" duration-ms="168044">
     <groups>
     </groups>
-    <test started-at="2023-06-26T00:25:48 MYT" name="Test" finished-at="2023-06-26T00:28:41 MYT" duration-ms="173287">
-      <class name="testcases.TC015_Search_All_Input_Values">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC015_Search_All_Input_Values@3857f613]" started-at="2023-06-26T00:28:21 MYT" name="setup" finished-at="2023-06-26T00:28:28 MYT" duration-ms="6150" status="PASS">
+    <test started-at="2023-06-26T11:25:20 MYT" name="wegoHotelSearchTestCases" finished-at="2023-06-26T11:28:08 MYT" duration-ms="168044">
+      <class name="testcases.TC004_CheckIn_PastDays">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC004_CheckIn_PastDays@71529963]" started-at="2023-06-26T11:27:17 MYT" name="setup" finished-at="2023-06-26T11:27:22 MYT" duration-ms="5100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchWith_Empty_Destination_CheckIn_CheckOut()[pri:0, instance:testcases.TC015_Search_All_Input_Values@3857f613]" started-at="2023-06-26T00:28:28 MYT" name="searchWith_Empty_Destination_CheckIn_CheckOut" finished-at="2023-06-26T00:28:41 MYT" duration-ms="13562" status="PASS">
+        <test-method signature="checkInPastDays()[pri:0, instance:testcases.TC004_CheckIn_PastDays@71529963]" started-at="2023-06-26T11:27:22 MYT" name="checkInPastDays" finished-at="2023-06-26T11:27:24 MYT" duration-ms="2137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkInPastDays -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC004_CheckIn_PastDays@71529963]" started-at="2023-06-26T11:27:24 MYT" name="tearDown" finished-at="2023-06-26T11:27:24 MYT" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC004_CheckIn_PastDays -->
+      <class name="testcases.TC015_Search_All_Input_Values">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC015_Search_All_Input_Values@512535ff]" started-at="2023-06-26T11:26:59 MYT" name="setup" finished-at="2023-06-26T11:27:05 MYT" duration-ms="6077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchWith_Empty_Destination_CheckIn_CheckOut()[pri:0, instance:testcases.TC015_Search_All_Input_Values@512535ff]" started-at="2023-06-26T11:27:05 MYT" name="searchWith_Empty_Destination_CheckIn_CheckOut" finished-at="2023-06-26T11:27:16 MYT" duration-ms="10915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWith_Empty_Destination_CheckIn_CheckOut -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC015_Search_All_Input_Values@3857f613]" started-at="2023-06-26T00:28:41 MYT" name="tearDown" finished-at="2023-06-26T00:28:41 MYT" duration-ms="255" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC015_Search_All_Input_Values@512535ff]" started-at="2023-06-26T11:27:16 MYT" name="tearDown" finished-at="2023-06-26T11:27:17 MYT" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC015_Search_All_Input_Values -->
       <class name="testcases.TC005_CheckIn_CheckOut_ValidDays">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC005_CheckIn_CheckOut_ValidDays@3cd3e762]" started-at="2023-06-26T00:26:24 MYT" name="setup" finished-at="2023-06-26T00:26:30 MYT" duration-ms="6482" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC005_CheckIn_CheckOut_ValidDays@e19bb76]" started-at="2023-06-26T11:26:51 MYT" name="setup" finished-at="2023-06-26T11:26:56 MYT" duration-ms="5757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkInCheckOutValidDays()[pri:0, instance:testcases.TC005_CheckIn_CheckOut_ValidDays@3cd3e762]" started-at="2023-06-26T00:26:30 MYT" name="checkInCheckOutValidDays" finished-at="2023-06-26T00:26:33 MYT" duration-ms="3253" status="PASS">
+        <test-method signature="checkInCheckOutValidDays()[pri:0, instance:testcases.TC005_CheckIn_CheckOut_ValidDays@e19bb76]" started-at="2023-06-26T11:26:56 MYT" name="checkInCheckOutValidDays" finished-at="2023-06-26T11:26:59 MYT" duration-ms="2661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInCheckOutValidDays -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC005_CheckIn_CheckOut_ValidDays@3cd3e762]" started-at="2023-06-26T00:26:33 MYT" name="tearDown" finished-at="2023-06-26T00:26:34 MYT" duration-ms="236" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC005_CheckIn_CheckOut_ValidDays@e19bb76]" started-at="2023-06-26T11:26:59 MYT" name="tearDown" finished-at="2023-06-26T11:26:59 MYT" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC005_CheckIn_CheckOut_ValidDays -->
-      <class name="testcases.TC004_CheckIn_PastDays">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC004_CheckIn_PastDays@3b0090a4]" started-at="2023-06-26T00:26:14 MYT" name="setup" finished-at="2023-06-26T00:26:21 MYT" duration-ms="6972" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="checkInPastDays()[pri:0, instance:testcases.TC004_CheckIn_PastDays@3b0090a4]" started-at="2023-06-26T00:26:21 MYT" name="checkInPastDays" finished-at="2023-06-26T00:26:23 MYT" duration-ms="2431" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkInPastDays -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC004_CheckIn_PastDays@3b0090a4]" started-at="2023-06-26T00:26:23 MYT" name="tearDown" finished-at="2023-06-26T00:26:24 MYT" duration-ms="231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC004_CheckIn_PastDays -->
       <class name="testcases.TC011_GuestsAndRooms_Add_Delete_Rooms">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC011_GuestsAndRooms_Add_Delete_Rooms@6ed3ccb2]" started-at="2023-06-26T00:27:37 MYT" name="setup" finished-at="2023-06-26T00:27:43 MYT" duration-ms="6317" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC011_GuestsAndRooms_Add_Delete_Rooms@4f1bfe23]" started-at="2023-06-26T11:26:39 MYT" name="setup" finished-at="2023-06-26T11:26:45 MYT" duration-ms="6035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addDeleteGuestsAndRooms()[pri:0, instance:testcases.TC011_GuestsAndRooms_Add_Delete_Rooms@6ed3ccb2]" started-at="2023-06-26T00:27:43 MYT" name="addDeleteGuestsAndRooms" finished-at="2023-06-26T00:27:48 MYT" duration-ms="5049" status="PASS">
+        <test-method signature="addDeleteGuestsAndRooms()[pri:0, instance:testcases.TC011_GuestsAndRooms_Add_Delete_Rooms@4f1bfe23]" started-at="2023-06-26T11:26:45 MYT" name="addDeleteGuestsAndRooms" finished-at="2023-06-26T11:26:50 MYT" duration-ms="4957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addDeleteGuestsAndRooms -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC011_GuestsAndRooms_Add_Delete_Rooms@6ed3ccb2]" started-at="2023-06-26T00:27:48 MYT" name="tearDown" finished-at="2023-06-26T00:27:49 MYT" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC011_GuestsAndRooms_Add_Delete_Rooms@4f1bfe23]" started-at="2023-06-26T11:26:50 MYT" name="tearDown" finished-at="2023-06-26T11:26:51 MYT" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC011_GuestsAndRooms_Add_Delete_Rooms -->
       <class name="testcases.TC006_CheckIn_CheckOut_SameDay">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC006_CheckIn_CheckOut_SameDay@1fa121e2]" started-at="2023-06-26T00:26:34 MYT" name="setup" finished-at="2023-06-26T00:26:40 MYT" duration-ms="5944" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC006_CheckIn_CheckOut_SameDay@61a88b8c]" started-at="2023-06-26T11:27:24 MYT" name="setup" finished-at="2023-06-26T11:27:30 MYT" duration-ms="6327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkInCheckOutSameDay()[pri:0, instance:testcases.TC006_CheckIn_CheckOut_SameDay@1fa121e2]" started-at="2023-06-26T00:26:40 MYT" name="checkInCheckOutSameDay" finished-at="2023-06-26T00:26:43 MYT" duration-ms="3618" status="PASS">
+        <test-method signature="checkInCheckOutSameDay()[pri:0, instance:testcases.TC006_CheckIn_CheckOut_SameDay@61a88b8c]" started-at="2023-06-26T11:27:30 MYT" name="checkInCheckOutSameDay" finished-at="2023-06-26T11:27:33 MYT" duration-ms="2883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInCheckOutSameDay -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC006_CheckIn_CheckOut_SameDay@1fa121e2]" started-at="2023-06-26T00:26:43 MYT" name="tearDown" finished-at="2023-06-26T00:26:43 MYT" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC006_CheckIn_CheckOut_SameDay@61a88b8c]" started-at="2023-06-26T11:27:33 MYT" name="tearDown" finished-at="2023-06-26T11:27:33 MYT" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC006_CheckIn_CheckOut_SameDay -->
       <class name="testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room@74e52ef6]" started-at="2023-06-26T00:27:28 MYT" name="setup" finished-at="2023-06-26T00:27:33 MYT" duration-ms="5156" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room@22295ec4]" started-at="2023-06-26T11:27:33 MYT" name="setup" finished-at="2023-06-26T11:27:39 MYT" duration-ms="5878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="guestsAndRoomsMin1Adult1Room()[pri:0, instance:testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room@74e52ef6]" started-at="2023-06-26T00:27:33 MYT" name="guestsAndRoomsMin1Adult1Room" finished-at="2023-06-26T00:27:37 MYT" duration-ms="3481" status="FAIL">
+        <test-method signature="guestsAndRoomsMin1Adult1Room()[pri:0, instance:testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room@22295ec4]" started-at="2023-06-26T11:27:39 MYT" name="guestsAndRoomsMin1Adult1Room" finished-at="2023-06-26T11:27:42 MYT" duration-ms="2917" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [1] but found [2]]]>
@@ -112,219 +112,155 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- guestsAndRoomsMin1Adult1Room -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room@74e52ef6]" started-at="2023-06-26T00:27:37 MYT" name="tearDown" finished-at="2023-06-26T00:27:37 MYT" duration-ms="267" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room@22295ec4]" started-at="2023-06-26T11:27:42 MYT" name="tearDown" finished-at="2023-06-26T11:27:43 MYT" duration-ms="240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room -->
       <class name="testcases.TC001_Hotels_Navigate_To_Hotel_Search">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC001_Hotels_Navigate_To_Hotel_Search@206a70ef]" started-at="2023-06-26T00:25:48 MYT" name="setup" finished-at="2023-06-26T00:25:55 MYT" duration-ms="6739" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC001_Hotels_Navigate_To_Hotel_Search@2c1156a7]" started-at="2023-06-26T11:25:58 MYT" name="setup" finished-at="2023-06-26T11:26:04 MYT" duration-ms="6443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="navigateToHotelSearch()[pri:0, instance:testcases.TC001_Hotels_Navigate_To_Hotel_Search@206a70ef]" started-at="2023-06-26T00:25:55 MYT" name="navigateToHotelSearch" finished-at="2023-06-26T00:25:56 MYT" duration-ms="800" status="PASS">
+        <test-method signature="navigateToHotelSearch()[pri:0, instance:testcases.TC001_Hotels_Navigate_To_Hotel_Search@2c1156a7]" started-at="2023-06-26T11:26:04 MYT" name="navigateToHotelSearch" finished-at="2023-06-26T11:26:05 MYT" duration-ms="635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToHotelSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC001_Hotels_Navigate_To_Hotel_Search@206a70ef]" started-at="2023-06-26T00:25:56 MYT" name="tearDown" finished-at="2023-06-26T00:25:56 MYT" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC001_Hotels_Navigate_To_Hotel_Search@2c1156a7]" started-at="2023-06-26T11:26:05 MYT" name="tearDown" finished-at="2023-06-26T11:26:05 MYT" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC001_Hotels_Navigate_To_Hotel_Search -->
       <class name="testcases.TC014_Search_ComparisonWithOutOtherWebsites2">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC014_Search_ComparisonWithOutOtherWebsites2@489115ef]" started-at="2023-06-26T00:28:11 MYT" name="setup" finished-at="2023-06-26T00:28:17 MYT" duration-ms="6052" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC014_Search_ComparisonWithOutOtherWebsites2@5adb0db3]" started-at="2023-06-26T11:27:43 MYT" name="setup" finished-at="2023-06-26T11:27:48 MYT" duration-ms="5806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:testcases.TC014_Search_ComparisonWithOutOtherWebsites2@489115ef]" started-at="2023-06-26T00:28:17 MYT" name="login" finished-at="2023-06-26T00:28:21 MYT" duration-ms="4252" status="PASS">
+        <test-method signature="ComparisonWithOutOtherWebsites2()[pri:0, instance:testcases.TC014_Search_ComparisonWithOutOtherWebsites2@5adb0db3]" started-at="2023-06-26T11:27:48 MYT" name="ComparisonWithOutOtherWebsites2" finished-at="2023-06-26T11:27:52 MYT" duration-ms="3714" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC014_Search_ComparisonWithOutOtherWebsites2@489115ef]" started-at="2023-06-26T00:28:21 MYT" name="tearDown" finished-at="2023-06-26T00:28:21 MYT" duration-ms="236" status="PASS">
+        </test-method> <!-- ComparisonWithOutOtherWebsites2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC014_Search_ComparisonWithOutOtherWebsites2@5adb0db3]" started-at="2023-06-26T11:27:52 MYT" name="tearDown" finished-at="2023-06-26T11:27:52 MYT" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC014_Search_ComparisonWithOutOtherWebsites2 -->
       <class name="testcases.TC013_Search_ComparisonWithOtherWebsites">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC013_Search_ComparisonWithOtherWebsites@15de0b3c]" started-at="2023-06-26T00:27:59 MYT" name="setup" finished-at="2023-06-26T00:28:06 MYT" duration-ms="7097" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC013_Search_ComparisonWithOtherWebsites@3f270e0a]" started-at="2023-06-26T11:27:52 MYT" name="setup" finished-at="2023-06-26T11:27:59 MYT" duration-ms="6254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:testcases.TC013_Search_ComparisonWithOtherWebsites@15de0b3c]" started-at="2023-06-26T00:28:06 MYT" name="login" finished-at="2023-06-26T00:28:11 MYT" duration-ms="4685" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: cannot determine loading status
-from no such window
-  (Session info: chrome=114.0.5735.134)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [34e56427448e9e30113ccb1d32c53b0b, clickElement {id=DABAB7B31EC2017619E359E4AFB72FC4_element_141}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\steph\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63092}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63092/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (34e56427448e9e30113ccb1d32c53b0b)] -> xpath: //button[@type='submit']]
-Session ID: 34e56427448e9e30113ccb1d32c53b0b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from no such window
-  (Session info: chrome=114.0.5735.134)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [34e56427448e9e30113ccb1d32c53b0b, clickElement {id=DABAB7B31EC2017619E359E4AFB72FC4_element_141}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\steph\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63092}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63092/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (34e56427448e9e30113ccb1d32c53b0b)] -> xpath: //button[@type='submit']]
-Session ID: 34e56427448e9e30113ccb1d32c53b0b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at pages.HotelSearchPage.search(HotelSearchPage.java:323)
-at testcases.TC013_Search_ComparisonWithOtherWebsites.login(TC013_Search_ComparisonWithOtherWebsites.java:45)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="ComparisonWithOtherWebsites()[pri:0, instance:testcases.TC013_Search_ComparisonWithOtherWebsites@3f270e0a]" started-at="2023-06-26T11:27:59 MYT" name="ComparisonWithOtherWebsites" finished-at="2023-06-26T11:28:07 MYT" duration-ms="8902" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC013_Search_ComparisonWithOtherWebsites@15de0b3c]" started-at="2023-06-26T00:28:11 MYT" name="tearDown" finished-at="2023-06-26T00:28:11 MYT" duration-ms="292" status="PASS">
+        </test-method> <!-- ComparisonWithOtherWebsites -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC013_Search_ComparisonWithOtherWebsites@3f270e0a]" started-at="2023-06-26T11:28:07 MYT" name="tearDown" finished-at="2023-06-26T11:28:08 MYT" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC013_Search_ComparisonWithOtherWebsites -->
       <class name="testcases.TC012_Search_WithFreeCancellation">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC012_Search_WithFreeCancellation@1a677343]" started-at="2023-06-26T00:27:49 MYT" name="setup" finished-at="2023-06-26T00:27:55 MYT" duration-ms="6004" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC012_Search_WithFreeCancellation@149dd36b]" started-at="2023-06-26T11:25:34 MYT" name="setup" finished-at="2023-06-26T11:25:40 MYT" duration-ms="5954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:testcases.TC012_Search_WithFreeCancellation@1a677343]" started-at="2023-06-26T00:27:55 MYT" name="login" finished-at="2023-06-26T00:27:59 MYT" duration-ms="4060" status="PASS">
+        <test-method signature="WithFreeCancellation()[pri:0, instance:testcases.TC012_Search_WithFreeCancellation@149dd36b]" started-at="2023-06-26T11:25:40 MYT" name="WithFreeCancellation" finished-at="2023-06-26T11:25:44 MYT" duration-ms="4136" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC012_Search_WithFreeCancellation@1a677343]" started-at="2023-06-26T00:27:59 MYT" name="tearDown" finished-at="2023-06-26T00:27:59 MYT" duration-ms="241" status="PASS">
+        </test-method> <!-- WithFreeCancellation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC012_Search_WithFreeCancellation@149dd36b]" started-at="2023-06-26T11:25:44 MYT" name="tearDown" finished-at="2023-06-26T11:25:44 MYT" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC012_Search_WithFreeCancellation -->
       <class name="testcases.TC007_CheckOut_LessThan_CheckIn_Date">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC007_CheckOut_LessThan_CheckIn_Date@7eac9008]" started-at="2023-06-26T00:26:43 MYT" name="setup" finished-at="2023-06-26T00:26:50 MYT" duration-ms="6598" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC007_CheckOut_LessThan_CheckIn_Date@503ecb24]" started-at="2023-06-26T11:25:20 MYT" name="setup" finished-at="2023-06-26T11:25:29 MYT" duration-ms="9596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkOutLessThanCheckIn()[pri:0, instance:testcases.TC007_CheckOut_LessThan_CheckIn_Date@7eac9008]" started-at="2023-06-26T00:26:50 MYT" name="checkOutLessThanCheckIn" finished-at="2023-06-26T00:26:53 MYT" duration-ms="2875" status="PASS">
+        <test-method signature="checkOutLessThanCheckIn()[pri:0, instance:testcases.TC007_CheckOut_LessThan_CheckIn_Date@503ecb24]" started-at="2023-06-26T11:25:29 MYT" name="checkOutLessThanCheckIn" finished-at="2023-06-26T11:25:33 MYT" duration-ms="3896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutLessThanCheckIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC007_CheckOut_LessThan_CheckIn_Date@7eac9008]" started-at="2023-06-26T00:26:53 MYT" name="tearDown" finished-at="2023-06-26T00:26:53 MYT" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC007_CheckOut_LessThan_CheckIn_Date@503ecb24]" started-at="2023-06-26T11:25:33 MYT" name="tearDown" finished-at="2023-06-26T11:25:34 MYT" duration-ms="326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC007_CheckOut_LessThan_CheckIn_Date -->
       <class name="testcases.TC003_Destination_WithPopularCity">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC003_Destination_WithPopularCity@179ece50]" started-at="2023-06-26T00:26:06 MYT" name="setup" finished-at="2023-06-26T00:26:12 MYT" duration-ms="6409" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC003_Destination_WithPopularCity@4982cc36]" started-at="2023-06-26T11:26:23 MYT" name="setup" finished-at="2023-06-26T11:26:30 MYT" duration-ms="6448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="destinationWithPopularCity()[pri:0, instance:testcases.TC003_Destination_WithPopularCity@179ece50]" started-at="2023-06-26T00:26:12 MYT" name="destinationWithPopularCity" finished-at="2023-06-26T00:26:14 MYT" duration-ms="1417" status="PASS">
+        <test-method signature="destinationWithPopularCity()[pri:0, instance:testcases.TC003_Destination_WithPopularCity@4982cc36]" started-at="2023-06-26T11:26:30 MYT" name="destinationWithPopularCity" finished-at="2023-06-26T11:26:31 MYT" duration-ms="1358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destinationWithPopularCity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC003_Destination_WithPopularCity@179ece50]" started-at="2023-06-26T00:26:14 MYT" name="tearDown" finished-at="2023-06-26T00:26:14 MYT" duration-ms="174" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC003_Destination_WithPopularCity@4982cc36]" started-at="2023-06-26T11:26:31 MYT" name="tearDown" finished-at="2023-06-26T11:26:31 MYT" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC003_Destination_WithPopularCity -->
       <class name="testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms@62ddbd7e]" started-at="2023-06-26T00:27:08 MYT" name="setup" finished-at="2023-06-26T00:27:15 MYT" duration-ms="7145" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms@33fe57a9]" started-at="2023-06-26T11:26:05 MYT" name="setup" finished-at="2023-06-26T11:26:11 MYT" duration-ms="6060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="guestsAndRoomsMax40Guests10Rooms()[pri:0, instance:testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms@62ddbd7e]" started-at="2023-06-26T00:27:15 MYT" name="guestsAndRoomsMax40Guests10Rooms" finished-at="2023-06-26T00:27:28 MYT" duration-ms="12658" status="PASS">
+        <test-method signature="guestsAndRoomsMax40Guests10Rooms()[pri:0, instance:testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms@33fe57a9]" started-at="2023-06-26T11:26:11 MYT" name="guestsAndRoomsMax40Guests10Rooms" finished-at="2023-06-26T11:26:23 MYT" duration-ms="12061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- guestsAndRoomsMax40Guests10Rooms -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms@62ddbd7e]" started-at="2023-06-26T00:27:28 MYT" name="tearDown" finished-at="2023-06-26T00:27:28 MYT" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms@33fe57a9]" started-at="2023-06-26T11:26:23 MYT" name="tearDown" finished-at="2023-06-26T11:26:23 MYT" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms -->
       <class name="testcases.TC008_GuestAndRooms_Max40Guests_5Room">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC008_GuestAndRooms_Max40Guests_5Room@4116aac9]" started-at="2023-06-26T00:26:53 MYT" name="setup" finished-at="2023-06-26T00:26:59 MYT" duration-ms="5721" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC008_GuestAndRooms_Max40Guests_5Room@38831718]" started-at="2023-06-26T11:25:44 MYT" name="setup" finished-at="2023-06-26T11:25:49 MYT" duration-ms="5437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="guestsAndRoomsMax40Guests5Rooms()[pri:0, instance:testcases.TC008_GuestAndRooms_Max40Guests_5Room@4116aac9]" started-at="2023-06-26T00:26:59 MYT" name="guestsAndRoomsMax40Guests5Rooms" finished-at="2023-06-26T00:27:08 MYT" duration-ms="9057" status="PASS">
+        <test-method signature="guestsAndRoomsMax40Guests5Rooms()[pri:0, instance:testcases.TC008_GuestAndRooms_Max40Guests_5Room@38831718]" started-at="2023-06-26T11:25:49 MYT" name="guestsAndRoomsMax40Guests5Rooms" finished-at="2023-06-26T11:25:57 MYT" duration-ms="7830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- guestsAndRoomsMax40Guests5Rooms -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC008_GuestAndRooms_Max40Guests_5Room@4116aac9]" started-at="2023-06-26T00:27:08 MYT" name="tearDown" finished-at="2023-06-26T00:27:08 MYT" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC008_GuestAndRooms_Max40Guests_5Room@38831718]" started-at="2023-06-26T11:25:57 MYT" name="tearDown" finished-at="2023-06-26T11:25:58 MYT" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC008_GuestAndRooms_Max40Guests_5Room -->
       <class name="testcases.TC002_Destination_WithSpecificCity">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC002_Destination_WithSpecificCity@9d5509a]" started-at="2023-06-26T00:25:56 MYT" name="setup" finished-at="2023-06-26T00:26:03 MYT" duration-ms="6892" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC002_Destination_WithSpecificCity@691939c9]" started-at="2023-06-26T11:26:31 MYT" name="setup" finished-at="2023-06-26T11:26:37 MYT" duration-ms="6109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="destinationWithSpecificCity()[pri:0, instance:testcases.TC002_Destination_WithSpecificCity@9d5509a]" started-at="2023-06-26T00:26:03 MYT" name="destinationWithSpecificCity" finished-at="2023-06-26T00:26:06 MYT" duration-ms="2804" status="PASS">
+        <test-method signature="destinationWithSpecificCity()[pri:0, instance:testcases.TC002_Destination_WithSpecificCity@691939c9]" started-at="2023-06-26T11:26:37 MYT" name="destinationWithSpecificCity" finished-at="2023-06-26T11:26:39 MYT" duration-ms="1760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destinationWithSpecificCity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC002_Destination_WithSpecificCity@9d5509a]" started-at="2023-06-26T00:26:06 MYT" name="tearDown" finished-at="2023-06-26T00:26:06 MYT" duration-ms="291" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC002_Destination_WithSpecificCity@691939c9]" started-at="2023-06-26T11:26:39 MYT" name="tearDown" finished-at="2023-06-26T11:26:39 MYT" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC002_Destination_WithSpecificCity -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- wegoHotelSearchTestCases -->
+  </suite> <!-- wegoSDETAssignment -->
 </testng-results>

@@ -44,5 +44,7 @@ public class TC009_GuestsAndRooms_Max40Guests_Max10Rooms extends BaseTest {
 
 		Assert.assertEquals((actualAdultCount+actualChildCount), 40);
 		Assert.assertEquals(actualRoomsCount, 10);
+		logger.info("Test Case Successfully executed");
+
 	}
 }

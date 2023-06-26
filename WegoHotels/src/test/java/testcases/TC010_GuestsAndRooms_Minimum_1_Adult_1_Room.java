@@ -41,5 +41,7 @@ public class TC010_GuestsAndRooms_Minimum_1_Adult_1_Room extends BaseTest {
 
 		Assert.assertEquals(actualAdultCount, 1);
 		Assert.assertEquals(actualRoomsCount, 1);
+		logger.info("Test Case Successfully executed");
+
 	}
 }

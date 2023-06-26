@@ -168,12 +168,15 @@ public class HotelSearchPage extends BaseTest{
 			if(ele.getText().equalsIgnoreCase(inputCheckOutDay)) {
 				ele.click();
 				if(checkOutBoxText.getText().isBlank()) {
+					logger.info("CheckOut field is blank");
 					checkOutDateEnabled = "Date is disabled";
 					break;
 				}
 				else
 				{
 					checkOutDateEnabled = "Date Selected";
+					logger.info("CheckOut field is entered");
+
 					break;
 				}
 
@@ -184,25 +187,35 @@ public class HotelSearchPage extends BaseTest{
 		else
 		{
 			checkOutDateEnabled = "Not Available";
+			logger.info("CheckOut field is blank");
+
 			
 		}
+		logger.info("CheckOut field is entered successfully");
+
 		return checkOutDateEnabled;
 	}
 	
 	public int guestsAdultAdd(int inputAdultCount, int inputRoomsCount) {
 		if(adultAdd.isDisplayed()==false) {
 			guestsAndRoomBtn.click();
+			logger.info("Guests&Room section is now opened");
+
 		}
 		String addAdultXpath = "//div[@class='vtVp78TxrwXGkme_znUC']/div["+inputRoomsCount+"]/div[2]/div[2]/button[2]";
 		WebElement adultAdd = driver.findElement(By.xpath(addAdultXpath));
 		wait.until(ExpectedConditions.elementToBeClickable(adultAdd));
-		
+
 		int actualAdultCount = addCount(adultCount);
 		while(actualAdultCount<inputAdultCount) {
 			adultAdd.click();
+			logger.info("Adding required adult count"+actualAdultCount);
+
 			actualAdultCount = addCount(adultCount);
 		}
 		actualAdultCount = addCount(adultCount);
+		logger.info("Adult count is added successfully");
+
 		////applyBtn.click();
 		return actualAdultCount;
 		
@@ -221,6 +234,7 @@ public class HotelSearchPage extends BaseTest{
 		int actualAdultCount = addCount(adultCount);
 		while(actualAdultCount>inputAdultCount) {
 			wait.until(ExpectedConditions.elementToBeClickable(adultRemove));
+			logger.info("Removing Adult count");
 			adultRemove.click();
 			actualAdultCount = addCount(adultCount);
 		}
@@ -240,10 +254,14 @@ public class HotelSearchPage extends BaseTest{
 		wait.until(ExpectedConditions.elementToBeClickable(childAdd));
 		int actualChildCount = addCount(childCount);		
 		while(actualChildCount<inputChildCount) {
+			logger.info("Adding Child Count");
+
 			childAdd.click();
 			actualChildCount = addCount(childCount);
 		}
 		actualChildCount = addCount(childCount);
+		logger.info("Child Count added successfully");
+
 		return actualChildCount;	
 	}
 	
@@ -258,6 +276,8 @@ public class HotelSearchPage extends BaseTest{
 		int actualChildCount = addCount(childCount);		
 		while(actualChildCount>inputChildCount) {
 			childRemove.click();
+			logger.info("Removing Child Count");
+
 			actualChildCount = addCount(childCount);
 		}
 		actualChildCount = addCount(childCount);
@@ -274,10 +294,14 @@ public class HotelSearchPage extends BaseTest{
 		int currentRoomsCount = roomsCount.size();
 		while(currentRoomsCount<inputRoomsCount) {
 			addRoom.click();
+			logger.info("Adding required number of Rooms");
+
 			currentRoomsCount = roomsCount.size();
 		}
 		
 		currentRoomsCount = roomsCount.size();
+		logger.info("Rooms are added successfully");
+
 		return currentRoomsCount;
 	}
 	
@@ -294,9 +318,13 @@ public class HotelSearchPage extends BaseTest{
 			removeRoomXpath = "//div[@class='vtVp78TxrwXGkme_znUC']/div["+inputRoomsCount+"]/div/button[contains(text(),'Remove')]";
 			removeRoom = driver.findElement(By.xpath(removeRoomXpath));
 			removeRoom.click();
+			logger.info("Removing required number of rooms");
+
 			currentRoomsCount = roomsCount.size();
 		}
 		currentRoomsCount = roomsCount.size();;
+		logger.info("Rooms removed successfully");
+
 		return currentRoomsCount;
 	}
 	
@@ -311,10 +339,14 @@ public class HotelSearchPage extends BaseTest{
 			
 			if(fcString.length == 2) {
 				freeCancellation.click();
+				logger.info("Selecting free Cancellation checkbox");
+
 				return true;
 			}
 		}
 			else {
+				logger.info("Free Cancellation checkbox is not selected");
+
 				return false;
 			}
 		return false;
@@ -329,14 +361,20 @@ public class HotelSearchPage extends BaseTest{
 			
 		if(withCompareSplit.length==3 && withComparisonValue.equalsIgnoreCase("No")) {
 			withComparison.click();
+			logger.info("Comparing with other websites are disabled");
+
 			withComparisonValue= "No";
 		}
 		else if(withCompareSplit.length==2 && withComparisonValue.equalsIgnoreCase("Yes") ) {
 			withComparison.click();
+			logger.info("Comparing with other websites are enabled");
+
 			withComparisonValue = "Yes";
 		}
 		}
 		else {
+			logger.info("Comparison with other websites are disabled");
+
 			withComparisonValue= "No";
 		}
 		return withComparisonValue;
@@ -345,7 +383,8 @@ public class HotelSearchPage extends BaseTest{
 	
 	public ArrayList<String> search() {
 		searchBtn.click();
-		
+		logger.info("Search button is clicked");
+
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		ArrayList<String> tabsUrl = new ArrayList<String>();
 		if(tabs.size()>1) {

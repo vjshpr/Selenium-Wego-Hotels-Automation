@@ -21,6 +21,7 @@ public class TC002_Destination_WithSpecificCity extends BaseTest {
 		hsr.navigateHotelSearch();
 		String actualDestinationName = hsr.destinationSpecificCity(inputDestinationName);
 		Assert.assertTrue(actualDestinationName.contains(inputDestinationName));
+		logger.info("Test Case Successfully executed");
 
 	}
 

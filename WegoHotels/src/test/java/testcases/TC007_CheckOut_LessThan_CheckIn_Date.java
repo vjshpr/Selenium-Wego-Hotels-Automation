@@ -30,6 +30,8 @@ public class TC007_CheckOut_LessThan_CheckIn_Date extends BaseTest {
 		String checkOutDateFound = hsr.checkOut(inputCheckOutDay, inputCheckOutMonth);
 		Assert.assertTrue(checkInDateFound.equals("Date Selected"));
 		Assert.assertTrue(checkOutDateFound.equals("Date is disabled"));
+		logger.info("Test Case Successfully executed");
+
 	}
 	
 }

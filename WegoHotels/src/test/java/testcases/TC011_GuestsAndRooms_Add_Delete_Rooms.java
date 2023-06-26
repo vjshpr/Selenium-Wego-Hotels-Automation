@@ -41,5 +41,7 @@ public class TC011_GuestsAndRooms_Add_Delete_Rooms extends BaseTest {
 		actualRoomsCount = hsr.roomsRemove(inputRoomsCount);
 		hsr.clickGuestRoomApplyBtn();
 		Assert.assertEquals(actualRoomsCount, inputRoomsCount);
+		logger.info("Test Case Successfully executed");
+
 	}
 }

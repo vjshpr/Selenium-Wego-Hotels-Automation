@@ -30,7 +30,8 @@ public class TC005_CheckIn_CheckOut_ValidDays extends BaseTest {
 		String checkOutDateFound = hsr.checkOut(inputCheckOutDay, inputCheckOutMonth);
 		Assert.assertTrue(checkInDateFound.equals("Date Selected"));
 		Assert.assertTrue(checkOutDateFound.equals("Date Selected"));
-		
+		logger.info("Test Case Successfully executed");
+
 	}
 	
 	

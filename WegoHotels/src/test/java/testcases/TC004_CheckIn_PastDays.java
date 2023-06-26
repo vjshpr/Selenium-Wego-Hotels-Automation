@@ -25,6 +25,7 @@ public class TC004_CheckIn_PastDays extends BaseTest {
 		hsr.destinationSpecificCity(inputDestinationName);
 		String checkInDateFound = hsr.checkIn(inputCheckInDay, inputCheckInMonth);
 		Assert.assertTrue(checkInDateFound.equals("Date is disabled"));
+		logger.info("Test Case Successfully executed");
 
 	}
 
