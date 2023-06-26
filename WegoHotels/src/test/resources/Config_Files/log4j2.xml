@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+<Properties>
+<Property name="filename">./logs</Property>
+</Properties>
+	<Appenders>
+		<RollingFile name="file"
+			fileName="${filename}/WegoHotelLog-%d{HH-mm-ss-SSS}.log"
+			filePattern="${filename}/WegoHotelLog-%d{HH-mm-ss-SSS}.log">
+			<PatternLayout>
+				<pattern>%d %p %c{1.} [%t] %m%n</pattern>
+			</PatternLayout>
+			<SizeBasedTriggeringPolicy size="500" />
+		</RollingFile>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Logger name="base" level="trace" addivity="false">
+			<AppenderRef ref="file" />
+		</Logger>
+		<Logger name="testcases" level="trace" addivity="false">
+			<AppenderRef ref="file" />
+		</Logger>
+		<Logger name="pages" level="trace" addivity="false">
+			<AppenderRef ref="file" />
+		</Logger>
+		<Logger name="utilities" level="trace" addivity="false">
+			<AppenderRef ref="file" />
+		</Logger>
+		<Root level="error">
+			<AppenderRef ref="file" />
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>

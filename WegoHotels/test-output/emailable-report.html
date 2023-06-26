@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">173,287</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room</td><td><a href="#m0">guestsAndRoomsMin1Adult1Room</a></td><td rowspan="1">1687710453689</td><td rowspan="1">3481</td></tr><tr class="failedodd"><td rowspan="1">testcases.TC013_Search_ComparisonWithOtherWebsites</td><td><a href="#m1">login</a></td><td rowspan="1">1687710486451</td><td rowspan="1">4685</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.TC001_Hotels_Navigate_To_Hotel_Search</td><td><a href="#m2">navigateToHotelSearch</a></td><td rowspan="1">1687710355455</td><td rowspan="1">800</td></tr><tr class="passedodd"><td rowspan="1">testcases.TC002_Destination_WithSpecificCity</td><td><a href="#m3">destinationWithSpecificCity</a></td><td rowspan="1">1687710363389</td><td rowspan="1">2804</td></tr><tr class="passedeven"><td rowspan="1">testcases.TC003_Destination_WithPopularCity</td><td><a href="#m4">destinationWithPopularCity</a></td><td rowspan="1">1687710372898</td><td rowspan="1">1417</td></tr><tr class="passedodd"><td rowspan="1">testcases.TC004_CheckIn_PastDays</td><td><a href="#m5">checkInPastDays</a></td><td rowspan="1">1687710381465</td><td rowspan="1">2431</td></tr><tr class="passedeven"><td rowspan="1">testcases.TC005_CheckIn_CheckOut_ValidDays</td><td><a href="#m6">checkInCheckOutValidDays</a></td><td rowspan="1">1687710390609</td><td rowspan="1">3253</td></tr><tr class="passedodd"><td rowspan="1">testcases.TC006_CheckIn_CheckOut_SameDay</td><td><a href="#m7">checkInCheckOutSameDay</a></td><td rowspan="1">1687710400042</td><td rowspan="1">3618</td></tr><tr class="passedeven"><td rowspan="1">testcases.TC007_CheckOut_LessThan_CheckIn_Date</td><td><a href="#m8">checkOutLessThanCheckIn</a></td><td rowspan="1">1687710410470</td><td rowspan="1">2875</td></tr><tr class="passedodd"><td rowspan="1">testcases.TC008_GuestAndRooms_Max40Guests_5Room</td><td><a href="#m9">guestsAndRoomsMax40Guests5Rooms</a></td><td rowspan="1">1687710419264</td><td rowspan="1">9057</td></tr><tr class="passedeven"><td rowspan="1">testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms</td><td><a href="#m10">guestsAndRoomsMax40Guests10Rooms</a></td><td rowspan="1">1687710435686</td><td rowspan="1">12658</td></tr><tr class="passedodd"><td rowspan="1">testcases.TC011_GuestsAndRooms_Add_Delete_Rooms</td><td><a href="#m11">addDeleteGuestsAndRooms</a></td><td rowspan="1">1687710463763</td><td rowspan="1">5049</td></tr><tr class="passedeven"><td rowspan="1">testcases.TC012_Search_WithFreeCancellation</td><td><a href="#m12">login</a></td><td rowspan="1">1687710475050</td><td rowspan="1">4060</td></tr><tr class="passedodd"><td rowspan="1">testcases.TC014_Search_ComparisonWithOutOtherWebsites2</td><td><a href="#m13">login</a></td><td rowspan="1">1687710497485</td><td rowspan="1">4252</td></tr><tr class="passedeven"><td rowspan="1">testcases.TC015_Search_All_Input_Values</td><td><a href="#m14">searchWith_Empty_Destination_CheckIn_CheckOut</a></td><td rowspan="1">1687710508131</td><td rowspan="1">13562</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room#guestsAndRoomsMin1Adult1Room</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [1] but found [2]
+	at testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room.guestsAndRoomsMin1Adult1Room(TC010_GuestsAndRooms_Minimum_1_Adult_1_Room.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.TC013_Search_ComparisonWithOtherWebsites#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=114.0.5735.134)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34e56427448e9e30113ccb1d32c53b0b, clickElement {id=DABAB7B31EC2017619E359E4AFB72FC4_element_141}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\steph\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63092}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63092/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (34e56427448e9e30113ccb1d32c53b0b)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: 34e56427448e9e30113ccb1d32c53b0b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at pages.HotelSearchPage.search(HotelSearchPage.java:323)
+	at testcases.TC013_Search_ComparisonWithOtherWebsites.login(TC013_Search_ComparisonWithOtherWebsites.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.TC001_Hotels_Navigate_To_Hotel_Search#navigateToHotelSearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.TC002_Destination_WithSpecificCity#destinationWithSpecificCity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.TC003_Destination_WithPopularCity#destinationWithPopularCity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.TC004_CheckIn_PastDays#checkInPastDays</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.TC005_CheckIn_CheckOut_ValidDays#checkInCheckOutValidDays</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.TC006_CheckIn_CheckOut_SameDay#checkInCheckOutSameDay</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.TC007_CheckOut_LessThan_CheckIn_Date#checkOutLessThanCheckIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.TC008_GuestAndRooms_Max40Guests_5Room#guestsAndRoomsMax40Guests5Rooms</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms#guestsAndRoomsMax40Guests10Rooms</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testcases.TC011_GuestsAndRooms_Add_Delete_Rooms#addDeleteGuestsAndRooms</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testcases.TC012_Search_WithFreeCancellation#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">testcases.TC014_Search_ComparisonWithOutOtherWebsites2#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">testcases.TC015_Search_All_Input_Values#searchWith_Empty_Destination_CheckIn_CheckOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

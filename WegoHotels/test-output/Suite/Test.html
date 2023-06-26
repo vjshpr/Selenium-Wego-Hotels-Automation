@@ -1,0 +1,285 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 26 00:25:48 MYT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>173 seconds (173287 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC013_Search_ComparisonWithOtherWebsites.login()'><b>login</b><br>Test class: testcases.TC013_Search_ComparisonWithOtherWebsites</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=114.0.5735.134)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34e56427448e9e30113ccb1d32c53b0b, clickElement {id=DABAB7B31EC2017619E359E4AFB72FC4_element_141}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\steph\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63092}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63092/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (34e56427448e9e30113ccb1d32c53b0b)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: 34e56427448e9e30113ccb1d32c53b0b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at pages.HotelSearchPage.search(HotelSearchPage.java:323)
+	at testcases.TC013_Search_ComparisonWithOtherWebsites.login(TC013_Search_ComparisonWithOtherWebsites.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1908071394", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1908071394'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=114.0.5735.134)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34e56427448e9e30113ccb1d32c53b0b, clickElement {id=DABAB7B31EC2017619E359E4AFB72FC4_element_141}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\steph\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63092}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63092/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (34e56427448e9e30113ccb1d32c53b0b)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: 34e56427448e9e30113ccb1d32c53b0b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at pages.HotelSearchPage.search(HotelSearchPage.java:323)
+	at testcases.TC013_Search_ComparisonWithOtherWebsites.login(TC013_Search_ComparisonWithOtherWebsites.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>4</td>
+<td>testcases.TC013_Search_ComparisonWithOtherWebsites@15de0b3c</td></tr>
+<tr>
+<td title='testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room.guestsAndRoomsMin1Adult1Room()'><b>guestsAndRoomsMin1Adult1Room</b><br>Test class: testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room</td>
+<td><div><pre>java.lang.AssertionError: expected [1] but found [2]
+	at testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room.guestsAndRoomsMin1Adult1Room(TC010_GuestsAndRooms_Minimum_1_Adult_1_Room.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1683877206", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1683877206'><pre>java.lang.AssertionError: expected [1] but found [2]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room.guestsAndRoomsMin1Adult1Room(TC010_GuestsAndRooms_Minimum_1_Adult_1_Room.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>3</td>
+<td>testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room@74e52ef6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC005_CheckIn_CheckOut_ValidDays.checkInCheckOutValidDays()'><b>checkInCheckOutValidDays</b><br>Test class: testcases.TC005_CheckIn_CheckOut_ValidDays</td>
+<td></td>
+<td>3</td>
+<td>testcases.TC005_CheckIn_CheckOut_ValidDays@3cd3e762</td></tr>
+<tr>
+<td title='testcases.TC008_GuestAndRooms_Max40Guests_5Room.guestsAndRoomsMax40Guests5Rooms()'><b>guestsAndRoomsMax40Guests5Rooms</b><br>Test class: testcases.TC008_GuestAndRooms_Max40Guests_5Room</td>
+<td></td>
+<td>9</td>
+<td>testcases.TC008_GuestAndRooms_Max40Guests_5Room@4116aac9</td></tr>
+<tr>
+<td title='testcases.TC015_Search_All_Input_Values.searchWith_Empty_Destination_CheckIn_CheckOut()'><b>searchWith_Empty_Destination_CheckIn_CheckOut</b><br>Test class: testcases.TC015_Search_All_Input_Values</td>
+<td></td>
+<td>13</td>
+<td>testcases.TC015_Search_All_Input_Values@3857f613</td></tr>
+<tr>
+<td title='testcases.TC006_CheckIn_CheckOut_SameDay.checkInCheckOutSameDay()'><b>checkInCheckOutSameDay</b><br>Test class: testcases.TC006_CheckIn_CheckOut_SameDay</td>
+<td></td>
+<td>3</td>
+<td>testcases.TC006_CheckIn_CheckOut_SameDay@1fa121e2</td></tr>
+<tr>
+<td title='testcases.TC014_Search_ComparisonWithOutOtherWebsites2.login()'><b>login</b><br>Test class: testcases.TC014_Search_ComparisonWithOutOtherWebsites2</td>
+<td></td>
+<td>4</td>
+<td>testcases.TC014_Search_ComparisonWithOutOtherWebsites2@489115ef</td></tr>
+<tr>
+<td title='testcases.TC004_CheckIn_PastDays.checkInPastDays()'><b>checkInPastDays</b><br>Test class: testcases.TC004_CheckIn_PastDays</td>
+<td></td>
+<td>2</td>
+<td>testcases.TC004_CheckIn_PastDays@3b0090a4</td></tr>
+<tr>
+<td title='testcases.TC003_Destination_WithPopularCity.destinationWithPopularCity()'><b>destinationWithPopularCity</b><br>Test class: testcases.TC003_Destination_WithPopularCity</td>
+<td></td>
+<td>1</td>
+<td>testcases.TC003_Destination_WithPopularCity@179ece50</td></tr>
+<tr>
+<td title='testcases.TC002_Destination_WithSpecificCity.destinationWithSpecificCity()'><b>destinationWithSpecificCity</b><br>Test class: testcases.TC002_Destination_WithSpecificCity</td>
+<td></td>
+<td>2</td>
+<td>testcases.TC002_Destination_WithSpecificCity@9d5509a</td></tr>
+<tr>
+<td title='testcases.TC001_Hotels_Navigate_To_Hotel_Search.navigateToHotelSearch()'><b>navigateToHotelSearch</b><br>Test class: testcases.TC001_Hotels_Navigate_To_Hotel_Search</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC001_Hotels_Navigate_To_Hotel_Search@206a70ef</td></tr>
+<tr>
+<td title='testcases.TC007_CheckOut_LessThan_CheckIn_Date.checkOutLessThanCheckIn()'><b>checkOutLessThanCheckIn</b><br>Test class: testcases.TC007_CheckOut_LessThan_CheckIn_Date</td>
+<td></td>
+<td>2</td>
+<td>testcases.TC007_CheckOut_LessThan_CheckIn_Date@7eac9008</td></tr>
+<tr>
+<td title='testcases.TC011_GuestsAndRooms_Add_Delete_Rooms.addDeleteGuestsAndRooms()'><b>addDeleteGuestsAndRooms</b><br>Test class: testcases.TC011_GuestsAndRooms_Add_Delete_Rooms</td>
+<td></td>
+<td>5</td>
+<td>testcases.TC011_GuestsAndRooms_Add_Delete_Rooms@6ed3ccb2</td></tr>
+<tr>
+<td title='testcases.TC012_Search_WithFreeCancellation.login()'><b>login</b><br>Test class: testcases.TC012_Search_WithFreeCancellation</td>
+<td></td>
+<td>4</td>
+<td>testcases.TC012_Search_WithFreeCancellation@1a677343</td></tr>
+<tr>
+<td title='testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms.guestsAndRoomsMax40Guests10Rooms()'><b>guestsAndRoomsMax40Guests10Rooms</b><br>Test class: testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms</td>
+<td></td>
+<td>12</td>
+<td>testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms@62ddbd7e</td></tr>
+</table><p>
+</body>
+</html>
