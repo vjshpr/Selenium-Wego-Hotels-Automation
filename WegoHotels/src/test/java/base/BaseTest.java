@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Properties;
 
 import org.apache.logging.log4j.*;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -33,11 +34,21 @@ public class BaseTest {
 		fileReader = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\Config_Files\\config.properties");
 		prop.load(fileReader);
 		
-		if(prop.getProperty("browser").equalsIgnoreCase("chrome")) {
+		String browser = System.getProperty("browser")!=null ? System.getProperty("browser") : prop.getProperty("browser");
+		
+		if(browser.contains("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			chromeOptions = new ChromeOptions();
 			chromeOptions.setExperimentalOption("prefs", allowPopup(1));
-			driver = new ChromeDriver(chromeOptions);
+			if(browser.contains("headless")) {
+				chromeOptions.addArguments("headless");
+				driver = new ChromeDriver(chromeOptions);
+				driver.manage().window().setSize(new Dimension(1440,900));
+			}
+			else {
+				driver = new ChromeDriver(chromeOptions);
+			}
+			
 			driver.manage().window().maximize();	
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.get(prop.getProperty("url"));

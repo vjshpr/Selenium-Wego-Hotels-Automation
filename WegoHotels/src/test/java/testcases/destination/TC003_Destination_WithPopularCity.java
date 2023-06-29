@@ -1,4 +1,4 @@
-package testcases;
+package testcases.destination;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,20 +9,21 @@ import base.BaseTest;
 import pages.HotelSearchPage;
 import utilities.ReadTestData;
 
-public class TC002_Destination_WithSpecificCity extends BaseTest {
+public class TC003_Destination_WithPopularCity extends BaseTest {
 
 	@Test
-	public void destinationWithSpecificCity() throws IOException, InterruptedException {
+	public void destinationWithPopularCity() throws IOException, InterruptedException {
+		
 		ReadTestData readTD = new ReadTestData();
 		String[] columnNames = { "Destination" };
-		ArrayList<String> testdata = readTD.getTestData("Input_TestData", columnNames, "TC002");
+		ArrayList<String> testdata = readTD.getTestData("Input_TestData", columnNames, "TC003");
 		String inputDestinationName = testdata.get(0);
 		HotelSearchPage hsr = PageFactory.initElements(driver, HotelSearchPage.class);
 		hsr.navigateHotelSearch();
-		String actualDestinationName = hsr.destinationSpecificCity(inputDestinationName);
+		String actualDestinationName = hsr.destinationPopularCity(inputDestinationName);
 		Assert.assertTrue(actualDestinationName.contains(inputDestinationName));
+	
 		logger.info("Test Case Successfully executed");
 
 	}
-
 }

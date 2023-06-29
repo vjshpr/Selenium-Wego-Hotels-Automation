@@ -1,4 +1,4 @@
-package testcases;
+package testcases.search;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,14 +9,14 @@ import base.BaseTest;
 import pages.HotelSearchPage;
 import utilities.ReadTestData;
 
-public class TC014_Search_ComparisonWithOutOtherWebsites2 extends BaseTest {
+public class TC015_Search_All_Input_Values extends BaseTest {
 
-	@Test
-	public static void ComparisonWithOutOtherWebsites2() throws InterruptedException, IOException {
+	@Test(groups = { "smoke", "regression" })
+	public static void searchWith_Empty_Destination_CheckIn_CheckOut() throws InterruptedException, IOException {
 		
 		ReadTestData readTD = new ReadTestData();
 		String[] columnNames = { "Destination","CheckIn","CheckOut","Adults","Children","Rooms","FreeCancellation","WithComparison" };
-		ArrayList<String> testdata = readTD.getTestData("Input_TestData", columnNames, "TC014");
+		ArrayList<String> testdata = readTD.getTestData("Input_TestData", columnNames, "TC015");
 		String inputDestinationName = testdata.get(0);
 		String inputCheckInDay = testdata.get(1).substring(0,testdata.get(1).indexOf(","));
 		String inputCheckInMonth= testdata.get(1).substring(testdata.get(1).indexOf(",")+2);
@@ -33,9 +33,9 @@ public class TC014_Search_ComparisonWithOutOtherWebsites2 extends BaseTest {
 		int actualRoomsCount = 0;
 		HotelSearchPage hsr = PageFactory.initElements(driver, HotelSearchPage.class);
 		hsr.navigateHotelSearch();
-		hsr.destinationSpecificCity(inputDestinationName);
-		hsr.checkIn(inputCheckInDay, inputCheckInMonth);
-		hsr.checkOut(inputCheckOutDay, inputCheckOutMonth);
+		String actualDestinationName = hsr.destinationSpecificCity(inputDestinationName);
+		String checkInDateFound = hsr.checkIn(inputCheckInDay, inputCheckInMonth);
+		String checkOutDateFound = hsr.checkOut(inputCheckOutDay, inputCheckOutMonth);
 		actualRoomsCount = hsr.roomsAdd(inputRoomsCount);
 		actualAdultCount = hsr.guestsAdultAdd(inputAdultCount, 1);
 		actualChildCount = hsr.guestsChildAdd(inputChildCount, 1);			
@@ -43,7 +43,14 @@ public class TC014_Search_ComparisonWithOutOtherWebsites2 extends BaseTest {
 		boolean actualFreeCancellation = hsr.freeCancellation(inputFreeCancellation);
 		String actualWithComparison = hsr.withComparison(inputWithComparison);
 		ArrayList<String> acutalWindowsUrl = hsr.search();
-		Assert.assertEquals(acutalWindowsUrl.size(), 0);
+		Assert.assertTrue(actualDestinationName.contains(inputDestinationName));
+		Assert.assertTrue(checkInDateFound.equals("Date Selected"));
+		Assert.assertTrue(checkOutDateFound.equals("Date Selected"));		
+		Assert.assertEquals(actualAdultCount, 5);
+		Assert.assertEquals(actualChildCount, 5);
+		Assert.assertEquals(actualRoomsCount, 1);
+		Assert.assertTrue(actualFreeCancellation, actualWithComparison);
+		Assert.assertEquals(acutalWindowsUrl.size(), 2);
 		logger.info("Test Case Successfully executed");
 
 	}

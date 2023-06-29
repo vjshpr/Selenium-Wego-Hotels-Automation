@@ -1,5 +1,4 @@
-package testcases;
-
+package testcases.destination;
 
 import org.apache.hc.core5.http.Method;
 import org.openqa.selenium.support.PageFactory;
@@ -10,10 +9,10 @@ import pages.HotelSearchPage;
 
 public class TC001_Hotels_Navigate_To_Hotel_Search extends BaseTest {
 
-	@Test
+	@Test(groups = { "smoke", "regression" })
 	public static void navigateToHotelSearch() throws InterruptedException {
 		HotelSearchPage hsr = PageFactory.initElements(driver, HotelSearchPage.class);
-		String pageTitle=hsr.navigateHotelSearch();
+		String pageTitle = hsr.navigateHotelSearch();
 		Assert.assertTrue(pageTitle.toLowerCase().contains("hotel"));
 		logger.info("Test Case Successfully executed");
 

@@ -1,4 +1,4 @@
-package testcases;
+package testcases.guestsandrooms;
 
 import java.io.IOException;
 import java.util.ArrayList;

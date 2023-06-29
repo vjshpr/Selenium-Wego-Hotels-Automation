@@ -1,4 +1,4 @@
-package testcases;
+package testcases.checkincheckout;
 
 import java.io.IOException;
 import java.util.ArrayList;

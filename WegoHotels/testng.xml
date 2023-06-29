@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="wegoSDETAssignment">
-  <test thread-count="5" name="wegoHotelSearchTestCases">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="testcases.TC007_CheckOut_LessThan_CheckIn_Date"/>
-      <class name="testcases.TC012_Search_WithFreeCancellation"/>
-      <class name="testcases.TC008_GuestAndRooms_Max40Guests_5Room"/>
-      <class name="testcases.TC001_Hotels_Navigate_To_Hotel_Search"/>
-      <class name="testcases.TC009_GuestsAndRooms_Max40Guests_Max10Rooms"/>
-      <class name="testcases.TC003_Destination_WithPopularCity"/>
-      <class name="testcases.TC002_Destination_WithSpecificCity"/>
-      <class name="testcases.TC011_GuestsAndRooms_Add_Delete_Rooms"/>
-      <class name="testcases.TC005_CheckIn_CheckOut_ValidDays"/>
-      <class name="testcases.TC015_Search_All_Input_Values"/>
-      <class name="testcases.TC004_CheckIn_PastDays"/>
-      <class name="testcases.TC006_CheckIn_CheckOut_SameDay"/>
-      <class name="testcases.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room"/>
-      <class name="testcases.TC014_Search_ComparisonWithOutOtherWebsites2"/>
-      <class name="testcases.TC013_Search_ComparisonWithOtherWebsites"/>
+      <class name="testcases.guestsandrooms.TC011_GuestsAndRooms_Add_Delete_Rooms"/>
+      <class name="testcases.guestsandrooms.TC010_GuestsAndRooms_Minimum_1_Adult_1_Room"/>
+      <class name="testcases.destination.TC003_Destination_WithPopularCity"/>
+      <class name="testcases.checkincheckout.TC006_CheckIn_CheckOut_SameDay"/>
+      <class name="testcases.search.TC012_Search_WithFreeCancellation"/>
+      <class name="testcases.destination.TC002_Destination_WithSpecificCity"/>
+      <class name="base.BaseTest"/>
+      <class name="testcases.checkincheckout.TC007_CheckOut_LessThan_CheckIn_Date"/>
+      <class name="testcases.search.TC014_Search_ComparisonWithOutOtherWebsites2"/>
+      <class name="testcases.guestsandrooms.TC009_GuestsAndRooms_Max40Guests_Max10Rooms"/>
+      <class name="testcases.search.TC013_Search_ComparisonWithOtherWebsites"/>
+      <class name="testcases.destination.TC001_Hotels_Navigate_To_Hotel_Search"/>
+      <class name="testcases.guestsandrooms.TC008_GuestAndRooms_Max40Guests_5Room"/>
+      <class name="testcases.checkincheckout.TC004_CheckIn_PastDays"/>
+      <class name="testcases.search.TC015_Search_All_Input_Values"/>
+      <class name="testcases.checkincheckout.TC005_CheckIn_CheckOut_ValidDays"/>
     </classes>
-  </test> <!-- wegoHotelSearchTestCases -->
-</suite> <!-- wegoSDETAssignment -->
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

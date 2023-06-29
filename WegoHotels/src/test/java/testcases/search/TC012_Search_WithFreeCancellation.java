@@ -1,4 +1,4 @@
-package testcases;
+package testcases.search;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,14 +9,14 @@ import base.BaseTest;
 import pages.HotelSearchPage;
 import utilities.ReadTestData;
 
-public class TC009_GuestsAndRooms_Max40Guests_Max10Rooms extends BaseTest {
+public class TC012_Search_WithFreeCancellation extends BaseTest {
 
-	@Test
-	public static void guestsAndRoomsMax40Guests10Rooms() throws InterruptedException, IOException {
+	@Test(groups = { "smoke", "regression" })
+	public static void WithFreeCancellation() throws InterruptedException, IOException {
 		
 		ReadTestData readTD = new ReadTestData();
-		String[] columnNames = { "Destination","CheckIn","CheckOut","Adults","Children","Rooms"};
-		ArrayList<String> testdata = readTD.getTestData("Input_TestData", columnNames, "TC009");
+		String[] columnNames = { "Destination","CheckIn","CheckOut","Adults","Children","Rooms","FreeCancellation","WithComparison"};
+		ArrayList<String> testdata = readTD.getTestData("Input_TestData", columnNames, "TC012");
 		String inputDestinationName = testdata.get(0);
 		String inputCheckInDay = testdata.get(1).substring(0,testdata.get(1).indexOf(","));
 		String inputCheckInMonth= testdata.get(1).substring(testdata.get(1).indexOf(",")+2);
@@ -25,25 +25,24 @@ public class TC009_GuestsAndRooms_Max40Guests_Max10Rooms extends BaseTest {
 		int inputAdultCount = Integer.parseInt(testdata.get(3));
 		int inputChildCount = Integer.parseInt(testdata.get(4));
 		int inputRoomsCount = Integer.parseInt(testdata.get(5));
-		
+		String inputFreeCancellation = testdata.get(6);
+		String inputWithComparison = testdata.get(7);		
 		int actualAdultCount = 0;
 		int actualChildCount = 0;
 		int actualRoomsCount = 0;
-		
 		HotelSearchPage hsr = PageFactory.initElements(driver, HotelSearchPage.class);
 		hsr.navigateHotelSearch();
 		hsr.destinationSpecificCity(inputDestinationName);
 		hsr.checkIn(inputCheckInDay, inputCheckInMonth);
 		hsr.checkOut(inputCheckOutDay, inputCheckOutMonth);
-		for(int room=1;room<=inputRoomsCount;room++) {
-			actualRoomsCount = hsr.roomsAdd(room);
-			actualAdultCount = hsr.guestsAdultAdd(inputAdultCount + actualAdultCount, room);
-			actualChildCount = hsr.guestsChildAdd(inputChildCount+ actualChildCount, room);			
-		}
+		actualRoomsCount = hsr.roomsAdd(inputRoomsCount);
+		actualAdultCount = hsr.guestsAdultAdd(inputAdultCount, 1);
+		actualChildCount = hsr.guestsChildAdd(inputChildCount, 1);			
 		hsr.clickGuestRoomApplyBtn();
-
-		Assert.assertEquals((actualAdultCount+actualChildCount), 40);
-		Assert.assertEquals(actualRoomsCount, 10);
+		boolean actualFreeCancellation = hsr.freeCancellation(inputFreeCancellation);
+		String withCompareValue = hsr.withComparison(inputWithComparison);
+		hsr.search();
+		Assert.assertEquals(actualFreeCancellation, true);
 		logger.info("Test Case Successfully executed");
 
 	}

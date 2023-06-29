@@ -1,4 +1,4 @@
-package testcases;
+package testcases.search;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,14 +9,14 @@ import base.BaseTest;
 import pages.HotelSearchPage;
 import utilities.ReadTestData;
 
-public class TC012_Search_WithFreeCancellation extends BaseTest {
+public class TC014_Search_ComparisonWithOutOtherWebsites2 extends BaseTest {
 
 	@Test
-	public static void WithFreeCancellation() throws InterruptedException, IOException {
+	public static void ComparisonWithOutOtherWebsites2() throws InterruptedException, IOException {
 		
 		ReadTestData readTD = new ReadTestData();
-		String[] columnNames = { "Destination","CheckIn","CheckOut","Adults","Children","Rooms","FreeCancellation","WithComparison"};
-		ArrayList<String> testdata = readTD.getTestData("Input_TestData", columnNames, "TC012");
+		String[] columnNames = { "Destination","CheckIn","CheckOut","Adults","Children","Rooms","FreeCancellation","WithComparison" };
+		ArrayList<String> testdata = readTD.getTestData("Input_TestData", columnNames, "TC014");
 		String inputDestinationName = testdata.get(0);
 		String inputCheckInDay = testdata.get(1).substring(0,testdata.get(1).indexOf(","));
 		String inputCheckInMonth= testdata.get(1).substring(testdata.get(1).indexOf(",")+2);
@@ -26,7 +26,8 @@ public class TC012_Search_WithFreeCancellation extends BaseTest {
 		int inputChildCount = Integer.parseInt(testdata.get(4));
 		int inputRoomsCount = Integer.parseInt(testdata.get(5));
 		String inputFreeCancellation = testdata.get(6);
-		String inputWithComparison = testdata.get(7);		
+		String inputWithComparison = testdata.get(7);
+		
 		int actualAdultCount = 0;
 		int actualChildCount = 0;
 		int actualRoomsCount = 0;
@@ -40,9 +41,9 @@ public class TC012_Search_WithFreeCancellation extends BaseTest {
 		actualChildCount = hsr.guestsChildAdd(inputChildCount, 1);			
 		hsr.clickGuestRoomApplyBtn();
 		boolean actualFreeCancellation = hsr.freeCancellation(inputFreeCancellation);
-		String withCompareValue = hsr.withComparison(inputWithComparison);
-		hsr.search();
-		Assert.assertEquals(actualFreeCancellation, true);
+		String actualWithComparison = hsr.withComparison(inputWithComparison);
+		ArrayList<String> acutalWindowsUrl = hsr.search();
+		Assert.assertEquals(acutalWindowsUrl.size(), 0);
 		logger.info("Test Case Successfully executed");
 
 	}
